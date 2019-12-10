@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "amiga-assembly.cstool": "bin/cstool",
+    "amiga-assembly.vasm": {
+      "enabled": true,
+      "file": "bin/vasmm68k_mot",
+      "options": [
+        "-m68000",
+        "-Fbin"
+      ]
+    },
+    "amiga-assembly.vlink": {
+      "enabled": false
+    },
+    "amiga-assembly.adfgenerator": {
+      "bootBlockSourceFile": "bblock.s",
+      "ADFToolsParentDir": "bin",
+      "sourceRootDir": "fs-uae/hd0",
+      "outputADFFile": "./build/disk.adf",
+      "includes": "**/*",
+      "excludes": "**/.*"
+    },
+    "editor.formatOnSave": true
+  }
+}
