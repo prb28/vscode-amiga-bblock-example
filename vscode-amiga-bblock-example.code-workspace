@@ -10,8 +10,9 @@
       "enabled": true,
       "file": "bin/vasmm68k_mot",
       "options": [
-        "-m68000",
-        "-Fbin"
+        // These options are not needed they are set by default
+        //"-m68000",
+        //"-Fbin"
       ]
     },
     "amiga-assembly.vlink": {
@@ -20,10 +21,7 @@
     "amiga-assembly.adfgenerator": {
       "bootBlockSourceFile": "bblock.s",
       "ADFToolsParentDir": "bin",
-      "sourceRootDir": "fs-uae/hd0",
-      "outputADFFile": "./build/disk.adf",
-      "includes": "**/*",
-      "excludes": "**/.*"
+      "outputADFFile": "./build/disk.adf"
     },
     "editor.formatOnSave": true
   }

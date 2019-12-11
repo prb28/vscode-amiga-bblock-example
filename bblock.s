@@ -7,9 +7,9 @@
 ; offset	size    number	name		meaning
 ; -------------------------------------------------------------------------------
 ; 0/0x00  char    4       DiskType	'D''O''S' + flags
-;                                         flags = 3 least signifiant bits
+;                                         flags = 3 least significant bits
 ;                                                set         clr
-; 					         0    FFS         OFS
+; 					                                0    FFS         OFS
 ;                                           1    INTL ONLY   NO_INTL ONLY
 ;                                           2    DIRC&INTL   NO_DIRC&INTL
 ; 4/0x04  ulong   1       Chksum          special block checksum
